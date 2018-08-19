@@ -1,0 +1,85 @@
+{{define "body"}}
+<div class="content-width">
+    <h1>Update your listing</h1>
+    <form action="/vendor/listings">
+        <label for="">Location</label>
+        <input type="text" value="Bellingham, WA">
+
+        <div class="flex">
+            <div>
+                <label for="">Category</label>
+                <div class="select">
+                    <select name="" id="">
+                        <option value="">Category</option>
+                    </select>
+                    <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+            <div>
+                <label for="">Style</label>
+                <div class="select">
+                    <select name="" id="">
+                        <option value="">Style</option>
+                    </select>
+                    <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+            <div>
+                <label for="">Color</label>
+                <div class="select">
+                    <select name="" id="">
+                        <option value="">Color</option>
+                    </select>
+                    <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <label for="">Title</label>
+        <input type="text" value="A beautiful Restoration Hardware Lancaster 10' Luxe depth sofa">
+
+        <label for="">Description</label>
+        <textarea>This sofa is so big and comfy. It'll fit your immediate and extended family all at once!</textarea>
+
+        <div class="flex">
+            <div>
+                <label for="">Length</label>
+                <div class="input">
+                    <input type="number" value="72">
+                    <div class="append">in</div>
+                </div>
+            </div>
+            <div>
+                <label for="">Width</label>
+                <div class="input">
+                    <input type="number" value="36">
+                    <div class="append">in</div>
+                </div>
+            </div>
+            <div>
+                <label for="">Height</label>
+                <div class="input">
+                    <input type="number" value="32">
+                    <div class="append">in</div>
+                </div>
+            </div>
+        </div>
+
+        <label for="">Price per day</label>
+        <div class="input">
+            <input class="padding-left" type="number" value="150">
+            <div class="prepend">$</div>
+        </div>
+
+        <button>Save</button>
+    </form>
+
+    <ul class="account">
+        <li><a href="#">Change featured image <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg></a></li>
+        <li><a href="#">Add images <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg></a></li>
+        <li><a href="#">Remove images <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg></a></li>
+    </ul>
+
+</div>
+
+{{end}}

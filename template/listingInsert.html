@@ -1,0 +1,82 @@
+{{define "body"}}
+<div class="content-width">
+    <h1>Let's post your first item!</h1>
+    <form action="/vendor/listings">
+        <label for="">Location</label>
+        <input type="text">
+
+        <div class="flex">
+            <div>
+                <label for="">Category</label>
+                <div class="select">
+                    <select name="" id="">
+                        <option value="">Category</option>
+                    </select>
+                    <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+            <div>
+                <label for="">Style</label>
+                <div class="select">
+                    <select name="" id="">
+                        <option value="">Style</option>
+                    </select>
+                    <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+            <div>
+                <label for="">Color</label>
+                <div class="select">
+                    <select name="" id="">
+                        <option value="">Color</option>
+                    </select>
+                    <svg class="chevron" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 16px; width: 16px; display: block; fill: rgb(72, 72, 72);"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <label for="">Title</label>
+        <input type="text">
+
+        <label for="">Description</label>
+        <textarea></textarea>
+
+        <div class="flex">
+            <div>
+                <label for="">Length</label>
+                <div class="input">
+                    <input type="number">
+                    <div class="append">in</div>
+                </div>
+            </div>
+            <div>
+                <label for="">Width</label>
+                <div class="input">
+                    <input type="number">
+                    <div class="append">in</div>
+                </div>
+            </div>
+            <div>
+                <label for="">Height</label>
+                <div class="input">
+                    <input type="number">
+                    <div class="append">in</div>
+                </div>
+            </div>
+        </div>
+
+        <label for="">Price per day</label>
+        <div class="input">
+            <input class="padding-left" type="number">
+            <div class="prepend">$</div>
+        </div>
+
+
+        <label for="">Images</label>
+        <input type="file" multiple="multiple">
+
+        <button class="larger">Publish</button>
+    </form>
+</div>
+
+{{end}}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="/static/site.webmanifest">
+    <link rel="apple-touch-icon" href="/static/icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<header id="index">
+    <div class="gradient">
+        <nav>
+            <a href="/"><img id="nav-logo" src="/static/img/logo-white.png" alt=""></a>
+            <ul>
+                <li><a href="/vendor/profile/create">Post</a></li>
+                <li>{{if not .IsLoggedIn}}<a href="/login">Log in</a>{{else}}<a href="/account"><img id="nav-profile-pic" src="/static/img/default_avatar_75x75-2.png" alt=""></a>{{end}}</li>
+                <li>
+                    <a href="/account/faves">
+                        <svg id="fave-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z"></path></svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Rent beautiful things for your wedding</h1>
+        <form action="/listings">
+            <div class="search">
+                <input type="search" placeholder="American Fork, UT">
+                <div class="search-icon"><svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height: 18px; width: 18px; display: block; fill: currentcolor;"><path d="m2.5 7c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5m13.1 6.9-2.8-2.9c.7-1.1 1.2-2.5 1.2-4 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.5 0 2.9-.5 4-1.2l2.9 2.8c.2.3.5.4.9.4.3 0 .6-.1.8-.4.5-.5.5-1.2 0-1.7"></path></svg></div>
+            </div>
+            <button class="hidden">Search</button>
+        </form>
+    </div>
+</header>
+<section id="featured-blog">
+    <h2>From the blog</h2>
+    <ul class="articles">
+        <li>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <h3>Watch our new series, Finding Furniture</h3>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <h3>Inspiration: A whimsical boho wedding</h3>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <h3>This is the title of the article</h3>
+            </div>
+        </li>
+    </ul>
+</section>
+<div id="become-a-vendor">
+    Start your rental business today<svg class="go" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10,17a1,1,0,0,1-.707-1.707L12.586,12,9.293,8.707a1,1,0,0,1,1.414-1.414L15.414,12l-4.707,4.707A1,1,0,0,1,10,17Z"></path></svg>
+</div>
+<footer><img id="nav-logo" src="/static/img/logo.png" alt=""> Beautiful things are meant to be shared.
+<div>
+    <small>© 2018 Wed Rentals, Inc <a href="#">Terms of Use</a> <a href="#">Privacy Policy</a></small>
+</div>
+</footer>
+<script src="/static/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/static/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script src="/static/js/plugins.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+
+</html>
