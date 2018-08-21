@@ -1,0 +1,29 @@
+{{define "css"}}main2{{end}}
+
+{{define "body"}}
+<div class="content-width">
+    <h1>Update content</h1>
+    <form method="post">
+        <label for="">Title</label>
+        <input type="text" name="title" value="This is the title">
+
+        <label for="">Description</label>
+        <textarea>This is the content of the listing. It's the kind of content that will make you squeal with excitement. I call it "Christmas Morning Content". I should probably trademark that. Man, I'm good.</textarea>
+
+        <label for="">Length</label>
+        <input type="number" name="length" value="72">
+
+        <label for="">Width</label>
+        <input type="number" name="width" value="34">
+
+        <label for="">Height</label>
+        <input type="number" name="height" value="27">
+
+        <label for="">Price per day</label>
+        <input type="number" name="price_per_day" value="45">
+
+        <button>Save</button>
+        <a href="/listing/update">Cancel</a>
+    </form>
+</div>
+{{end}}

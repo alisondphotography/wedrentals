@@ -9,6 +9,12 @@ import (
 )
 
 func main() {
+	http.HandleFunc("/listing/update", listingUpdateHandler)
+	http.HandleFunc("/listing/update/content", listingUpdateContentHandler)
+	http.HandleFunc("/listing/update/images", listingUpdateImagesHandler)
+	http.HandleFunc("/listing/update/image/add", listingUpdateImageCreateHandler)
+	http.HandleFunc("/listing/update/image", listingUpdateImageHandler)
+
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/signup", makeAuthHandler("accountInsert.html"))
 	http.HandleFunc("/login", makeAuthHandler("accountLogIn.html"))
@@ -20,7 +26,6 @@ func main() {
 	http.HandleFunc("/vendor/profile/create", makeHandler("profileInsert.html"))
 	http.HandleFunc("/vendor/profile/update", makeHandler("profileUpdate.html"))
 	http.HandleFunc("/vendor/post", makeHandler("listingInsert.html"))
-	http.HandleFunc("/vendor/post/update", makeHandler("listingUpdate.html"))
 	http.HandleFunc("/vendor/listings", makeHandler("vendorListings.html"))
 	http.HandleFunc("/listings", makeListingsHandler("listings.html"))
 	http.HandleFunc("/listing", makeHandler("listing.html"))
