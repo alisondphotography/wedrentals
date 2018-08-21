@@ -477,6 +477,30 @@ nav ul li:nth-of-type(1n + 2) {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    .content-width {
+        padding: 0 10em;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    #listing-images {
+        padding: 0 10em;
+    }
+    #listing-images li {
+        height: 425px;
+        width: 600px;
+    }
+    #listing-images.small li {
+        height: 300px !important;
+        width: 400px !important;
+    }
+    .content {
+        max-width: 600px;
+        margin-left: 1em;
+    }
+    .content.main {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
 }
 
 @media print,

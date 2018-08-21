@@ -1,24 +1,34 @@
 {{define "css"}}main2{{end}}
 {{define "body"}}
 <div id="vendor-info" class="content-width">
-    <img id="fake-profile-pic" src="" alt=""> Utah Vintage Rentals
+    <div class="content">
+        <img id="fake-profile-pic" src="" alt=""> Utah Vintage Rentals
+    </div>
 </div>
-<ul id="listing-images">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+<div class="new">
+    <ul id="listing-images">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
 <div id="listing" class="content-width">
-    <div id="location">Salt Lake City, UT</div>
-    <h1>The title of the listing</h1>
-    <p>This is the content of the listing. It's the kind of content that will make you squeal with excitement. I call it "Christmas Morning Content". I should probably trademark that. Man, I'm good.</p>
-    <p>72L x 36W x 24H</p>
+    <div class="content main">
+        <div id="location">Salt Lake City, UT</div>
+        <h1>The title of the listing</h1>
+        <p>This is the content of the listing. It's the kind of content that will make you squeal with excitement. I call it "Christmas Morning Content". I should probably trademark that. Man, I'm good.</p>
+        <p>72L x 36W x 24H</p>
+    </div>
+
     <div id="cta">
         <div class="price"><span>$150</span> per day</div>
         <div><button>Rent</button></div>
     </div>
-    <h2>More from Utah Vintage Rentals</h2>
+    <div class="content">
+        <h2>More from Utah Vintage Rentals</h2>
+    </div>
 </div>
 <ul id="listing-images" class="small" style="margin-bottom: 7em;">
     <li></li>
